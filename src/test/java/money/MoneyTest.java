@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *  amount をprivateにする
  *  Money の丸め処理
  *  equals()
+ *  hashCode()
  *
  * Done
  *  $5 * 2 = $ 10
