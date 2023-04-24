@@ -24,6 +24,6 @@ public class MoneyTest {
     Dollar product = five.times(2);
     assertEquals(10, product.amount);
     product = five.times(3);
-    assertEquals(15, product.amount);
+    assertEquals(15, product.amount); // expected 15 but got 30 で副作用は解消されていない
   }
 }
