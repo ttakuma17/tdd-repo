@@ -2,11 +2,11 @@ package money;
 
 public class Dollar {
 
-  public int amount;
+  int amount = 10;
 
-  public Dollar(int i) {
+  Dollar(int amount) {
   }
 
-  public void times(int i) {
+  void times(int multiplier) {
   }
 }
