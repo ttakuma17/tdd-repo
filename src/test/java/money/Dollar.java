@@ -9,7 +9,7 @@ public class Dollar {
   }
 
   Dollar times(int multiplier) {
-    amount *= multiplier;
-    return null;
+    // NullpointerExceptionが返却されるため修正
+    return new Dollar(amount *= multiplier);
   }
 }
