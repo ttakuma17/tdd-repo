@@ -7,8 +7,15 @@ import static org.junit.jupiter.api.Assertions.*;
  * 通貨の異なる２つの金額を足し、通過間の為替レートに基づいて換算された金額を得る
  *
  * Todo
- * $5 + 10 CHF = $10 (レートが2:1の場合)
- * $5 * 2 = $ 10
+ * Unassigned
+ *  $5 + 10 CHF = $10 (レートが2:1の場合)
+ *  amount をprivateにする
+ *  Dollar の副作用
+ *  Money の丸め処理
+ *
+ * Done
+ *  $5 * 2 = $ 10
+ *
  */
 public class MoneyTest {
   @Test
