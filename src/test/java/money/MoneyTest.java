@@ -10,11 +10,12 @@ import static org.junit.jupiter.api.Assertions.*;
  * Unassigned
  *  $5 + 10 CHF = $10 (レートが2:1の場合)
  *  amount をprivateにする
- *  Dollar の副作用
  *  Money の丸め処理
+ *  equals()
  *
  * Done
  *  $5 * 2 = $ 10
+ *  Dollar の副作用
  *
  */
 public class MoneyTest {
@@ -24,6 +25,6 @@ public class MoneyTest {
     Dollar product = five.times(2);
     assertEquals(10, product.amount);
     product = five.times(3);
-    assertEquals(15, product.amount); // expected 15 but got 30 で副作用は解消されていない
+    assertEquals(15, product.amount);
   }
 }
