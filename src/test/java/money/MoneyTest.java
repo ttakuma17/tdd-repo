@@ -13,8 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *  hashCode()
  *  nullとの等価性比較
  *  他のオブジェクトとの等価性比較
- *  DpllarとFrancの重複
- *  equals の一般化
+ *  DollarとFrancの重複
  *  times の一般化
  *
  * Done
@@ -23,6 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *  equals()
  *  amount をprivateにする
  *  5CHF * 2 = 10CHF
+ *  equals の一般化
  */
 
 public class MoneyTest {
@@ -39,6 +39,7 @@ public class MoneyTest {
     assertFalse(new Dollar(5).equals(new Dollar(6)));
     assertTrue(new Franc(5).equals(new Franc(5)));
     assertFalse(new Franc(5).equals(new Franc(6)));
+    assertFalse(new Franc(5).equals(new Dollar(5)));
   }
 
   @Test
