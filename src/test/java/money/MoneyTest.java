@@ -15,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *  他のオブジェクトとの等価性比較
  *  DollarとFrancの重複
  *  times の一般化
+ *  通貨の概念
  *
  * Done
  *  $5 * 2 = $ 10
@@ -23,6 +24,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *  amount をprivateにする
  *  5CHF * 2 = 10CHF
  *  equals の一般化
+ *  DollarとFrancの比較
  */
 
 public class MoneyTest {
