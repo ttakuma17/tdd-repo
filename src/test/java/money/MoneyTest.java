@@ -13,14 +13,18 @@ import static org.junit.jupiter.api.Assertions.*;
  *  hashCode()
  *  nullとの等価性比較
  *  他のオブジェクトとの等価性比較
+ *  DpllarとFrancの重複
+ *  equals の一般化
+ *  times の一般化
  *
  * Done
  *  $5 * 2 = $ 10
  *  Dollar の副作用
  *  equals()
  *  amount をprivateにする
- *
+ *  5CHF * 2 = 10CHF
  */
+
 public class MoneyTest {
   @Test
   public void testMultiplication(){
