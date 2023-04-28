@@ -2,18 +2,6 @@ package money;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * やりたいこと
- * 通貨の異なる２つの金額を足し、通過間の為替レートに基づいて換算された金額を得る
- *
- * Todo
- * $5 + 10CHF = $10 (レートが2:1の場合)
- * $5 + $5 = $10
- * $5 + $5 がMoneyを返す
- *
- * Done
- */
-
 public class MoneyTest {
   @Test
   public void testMultiplication(){
@@ -69,7 +57,8 @@ public class MoneyTest {
   }
 
   @Test
-  public void testArrayEquals(){
-    assertTrue((new Object[] {"abc"}).equals(new Object[] {"abc"} ));
+  public void testIdentityRate(){
+    assertEquals(1, new Bank().rate("USD", "USD"));
   }
+
 }
