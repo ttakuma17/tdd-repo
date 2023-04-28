@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Todo
  * $5 + 10CHF = $10 (レートが2:1の場合)
  * $5 + $5 = $10
+ * $5 + $5 がMoneyを返す
  *
  * Done
  */
@@ -41,5 +42,14 @@ public class MoneyTest {
     Bank bank = new Bank();
     Money reduced = bank.reduce(sum, "USD");
     assertEquals(Money.dollar(10), reduced);
+  }
+
+  @Test
+  public void testPlusReturnSum(){
+    Money five = Money.dollar(5);
+    Expression result = five.plus(five);
+    Sum sum = (Sum)result;
+    assertEquals(five, sum.augend);
+    assertEquals(five, sum.addend);
   }
 }
