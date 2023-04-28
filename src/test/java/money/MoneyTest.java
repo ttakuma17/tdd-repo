@@ -7,25 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
  * 通貨の異なる２つの金額を足し、通過間の為替レートに基づいて換算された金額を得る
  *
  * Todo
- * Unassigned
- *  $5 + 10 CHF = $10 (レートが2:1の場合)
- *  Money の丸め処理
- *  hashCode()
- *  nullとの等価性比較
- *  他のオブジェクトとの等価性比較
- *  DollarとFrancの重複
- *  testFrancMultiplicationの削除
+ * $5 + 10CHF = $10 (レートが2:1の場合)
+ * $5 + $5 = $10
  *
  * Done
- *  $5 * 2 = $ 10
- *  Money.dollar の副作用
- *  equals()
- *  amount をprivateにする
- *  5CHF * 2 = 10CHF
- *  equals の一般化
- *  DollarとFrancの比較
- *  通貨の概念
- *  times の一般化
  */
 
 public class MoneyTest {
@@ -47,5 +32,11 @@ public class MoneyTest {
   public void testCurrency(){
     assertEquals("USD", Money.dollar(1).currency());
     assertEquals("CHF", Money.franc(1).currency());
+  }
+
+  @Test
+  public void testSimpleAddition(){
+    Money sum = Money.dollar(5).plus(Money.dollar(5));
+    assertEquals(Money.dollar(10), sum);
   }
 }
