@@ -14,8 +14,6 @@ import static org.junit.jupiter.api.Assertions.*;
  *  nullとの等価性比較
  *  他のオブジェクトとの等価性比較
  *  DollarとFrancの重複
- *  times の一般化
- *  通貨の概念
  *  testFrancMultiplicationの削除
  *
  * Done
@@ -26,6 +24,8 @@ import static org.junit.jupiter.api.Assertions.*;
  *  5CHF * 2 = 10CHF
  *  equals の一般化
  *  DollarとFrancの比較
+ *  通貨の概念
+ *  times の一般化
  */
 
 public class MoneyTest {
